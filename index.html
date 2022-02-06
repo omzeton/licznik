@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" class="js">
+    <head>
+        <meta charset="utf-8" />
+        <title>逐步地争取成功</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="icon" href="img/browser-logo.png" />
+        <link rel="stylesheet" type="text/css" href="style.css" />
+    </head>
+    <body>
+        <div id="load">
+            <img src="img/tekst.svg" id="load_screen__text" alt="永不止步" />
+
+            <svg class="shape-overlays is-opened" viewBox="0 0 100 100" preserveAspectRatio="none">
+                <path class="shape-overlays__path"></path>
+                <path class="shape-overlays__path"></path>
+                <path class="shape-overlays__path"></path>
+            </svg>
+        </div>
+
+        <div class="bg"></div>
+
+        <div class="border"></div>
+
+        <div class="container">
+            <div class="popup" id="popup">
+                <h2>Hej! Dobra robota! :)</h2>
+            </div>
+            <div class="timer">
+                <div class="digits">
+                    <p class="digit">0</p>
+                    <p class="digit">0</p>
+                    <p class="semi">:</p>
+                    <p class="digit">0</p>
+                    <p class="digit">0</p>
+                </div>
+            </div>
+            <div class="controls">
+                <button type="button" class="control-button btn btn-2 btn-2c">15</button>
+                <button type="button" class="control-button btn btn-2 btn-2c">20</button>
+                <button type="button" class="control-button btn btn-2 btn-2c">50</button>
+                <button type="button" class="control-button btn btn-2d btn-2cd" id="toggle"></button>
+            </div>
+        </div>
+
+        <script src="js/easings.js"></script>
+        <script src="js/shapeOverlays.js"></script>
+        <script src="js/timerMain.js"></script>
+    </body>
+</html>

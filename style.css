@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald:400,900");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,500,700");
+@import url("https://fonts.googleapis.com/css?family=Oswald:400,700,900");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700,900");
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Adam\/Desktop\/Strony\/\@Git\/\%23licznik\/css\/style\.scss}line{font-family:\0000323}}
+::selection { color: #f3f7f0; background-color: #19323c; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Adam\/Desktop\/Strony\/\@Git\/\%23licznik\/css\/style\.scss}line{font-family:\0000328}}
+html { box-sizing: border-box; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Adam\/Desktop\/Strony\/\@Git\/\%23licznik\/css\/style\.scss}line{font-family:\0000331}}
+*, *:before, *:after { box-sizing: inherit; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Adam\/Desktop\/Strony\/\@Git\/\%23licznik\/css\/style\.scss}line{font-family:\0000336}}
+body { margin: 0; padding: 0; height: 100%; width: 100%; overflow-x: hidden; position: absolute; background: #000; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Adam\/Desktop\/Strony\/\@Git\/\%23licznik\/css\/style\.scss}line{font-family:\0000346}}
+#load { position: fixed; width: 100%; height: 100%; z-index: 9999; background-color: #19323c; display: flex; justify-content: center; flex-direction: column; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Adam\/Desktop\/Strony\/\@Git\/\%23licznik\/css\/style\.scss}line{font-family:\0000355}}
+#load img { opacity: 1; transition: 1s; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Adam\/Desktop\/Strony\/\@Git\/\%23licznik\/css\/style\.scss}line{font-family:\0000359}}
+#load .shape-overlays { width: 100vw; height: 100vh; pointer-events: none; position: fixed; top: 0; left: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Adam\/Desktop\/Strony\/\@Git\/\%23licznik\/css\/style\.scss}line{font-family:\0000366}}
+#load .shape-overlays .shape-overlays.is-opened { pointer-events: auto; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Adam\/Desktop\/Strony\/\@Git\/\%23licznik\/css\/style\.scss}line{font-family:\0000370}}
+#load .shape-overlays .shape-overlays__path:nth-of-type(1) { fill: #f2545b; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Adam\/Desktop\/Strony\/\@Git\/\%23licznik\/css\/style\.scss}line{font-family:\0000374}}
+#load .shape-overlays .shape-overlays__path:nth-of-type(2) { fill: #a93f55; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Adam\/Desktop\/Strony\/\@Git\/\%23licznik\/css\/style\.scss}line{font-family:\0000378}}
+#load .shape-overlays .shape-overlays__path:nth-of-type(3) { fill: #19323c; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Adam\/Desktop\/Strony\/\@Git\/\%23licznik\/css\/style\.scss}line{font-family:\0000386}}
+.js body { opacity: 0; transition: opacity 0.3s; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Adam\/Desktop\/Strony\/\@Git\/\%23licznik\/css\/style\.scss}line{font-family:\0000391}}
+.js body.render { opacity: 1; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Adam\/Desktop\/Strony\/\@Git\/\%23licznik\/css\/style\.scss}line{font-family:\0000395}}
+.border { position: absolute; width: 95%; height: 95%; background: transparent; top: 50%; left: 50%; transform: translateX(-50%) translateY(-50%); border: 2px solid #19323c; opacity: 0.4; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Adam\/Desktop\/Strony\/\@Git\/\%23licznik\/css\/style\.scss}line{font-family:\00003107}}
+.bg { position: fixed; width: 100%; height: 100%; z-index: -1; background-image: url("../img/bg.jpg"); background-position: center; background-size: cover; background-repeat: no-repeat; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Adam\/Desktop\/Strony\/\@Git\/\%23licznik\/css\/style\.scss}line{font-family:\00003113}}
+.bg:after { position: absolute; content: ''; top: 0; left: 0; height: 100%; width: 100%; background-color: #19323c; mix-blend-mode: color; opacity: 1; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Adam\/Desktop\/Strony\/\@Git\/\%23licznik\/css\/style\.scss}line{font-family:\00003120}}
+.bg:before { position: absolute; content: ''; top: 0; left: 0; height: 100%; width: 100%; background-color: #19323c; opacity: 0.6; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Adam\/Desktop\/Strony\/\@Git\/\%23licznik\/css\/style\.scss}line{font-family:\00003127}}
+.container { position: absolute; width: 35em; height: 27em; top: 50%; left: 50%; transform: translateX(-50%) translateY(-50%); display: grid; grid-template-rows: 65% 35%; grid-template-columns: 1fr; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Adam\/Desktop\/Strony\/\@Git\/\%23licznik\/css\/style\.scss}line{font-family:\00003137}}
+.container .popup { position: absolute; width: 13em; height: 2em; background-color: #f2545b; left: 50%; top: 5em; opacity: 0; transition: 1s; transform: translateX(-50%); display: flex; align-items: center; justify-content: center; flex-direction: column; border-radius: 0.5em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Adam\/Desktop\/Strony\/\@Git\/\%23licznik\/css\/style\.scss}line{font-family:\00003149}}
+.container .popup h2 { font-weight: 300; font-family: 'Roboto', sans-serif; font-size: 2em; letter-spacing: 0px; font-weight: 900; line-height: 0em; font-size: 1em; color: #f3f7f0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Adam\/Desktop\/Strony\/\@Git\/\%23licznik\/css\/style\.scss}line{font-family:\00003156}}
+.container .timer { display: flex; align-items: center; justify-content: center; flex-direction: column; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Adam\/Desktop\/Strony\/\@Git\/\%23licznik\/css\/style\.scss}line{font-family:\00003158}}
+.container .timer .digits { height: 100%; display: grid; grid-template-columns: 7em 7em 4em 7em 7em; grid-template-rows: 1fr; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Adam\/Desktop\/Strony\/\@Git\/\%23licznik\/css\/style\.scss}line{font-family:\00003164}}
+.container .timer .digits p { display: flex; align-items: center; justify-content: center; flex-direction: column; font-family: 'Oswald', sans-serif; font-weight: 900; font-size: 15em; letter-spacing: 0em; line-height: 0em; font-size: 12.5em; color: #f3f7f0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Adam\/Desktop\/Strony\/\@Git\/\%23licznik\/css\/style\.scss}line{font-family:\00003170}}
+.container .timer .digits .semi { opacity: 0.8; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Adam\/Desktop\/Strony\/\@Git\/\%23licznik\/css\/style\.scss}line{font-family:\00003175}}
+.container .controls { display: flex; align-items: center; justify-content: center; flex-direction: row; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Adam\/Desktop\/Strony\/\@Git\/\%23licznik\/css\/style\.scss}line{font-family:\00003177}}
+.container .controls .btn { -webkit-transition: all 0.3s; -moz-transition: all 0.3s; transition: all 0.3s; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Adam\/Desktop\/Strony\/\@Git\/\%23licznik\/css\/style\.scss}line{font-family:\00003183}}
+.container .controls .btn-2 { box-shadow: 0 6px #C9C9C9; -webkit-transition: none; -moz-transition: none; transition: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Adam\/Desktop\/Strony\/\@Git\/\%23licznik\/css\/style\.scss}line{font-family:\00003190}}
+.container .controls .btn:after { content: ''; position: absolute; z-index: -1; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; transition: all 0.3s; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Adam\/Desktop\/Strony\/\@Git\/\%23licznik\/css\/style\.scss}line{font-family:\00003199}}
+.container .controls .btn-2c { border-radius: 5px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Adam\/Desktop\/Strony\/\@Git\/\%23licznik\/css\/style\.scss}line{font-family:\00003203}}
+.container .controls .btn-2c:hover { box-shadow: 0 4px #C9C9C9; top: 2px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Adam\/Desktop\/Strony\/\@Git\/\%23licznik\/css\/style\.scss}line{font-family:\00003208}}
+.container .controls .btn-2c:active { box-shadow: 0 0 #C9C9C9; top: 6px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Adam\/Desktop\/Strony\/\@Git\/\%23licznik\/css\/style\.scss}line{font-family:\00003213}}
+.container .controls .btn-2d { box-shadow: 0 6px #A85155; -webkit-transition: none; -moz-transition: none; transition: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Adam\/Desktop\/Strony\/\@Git\/\%23licznik\/css\/style\.scss}line{font-family:\00003220}}
+.container .controls .btn-2cd:hover { box-shadow: 0 4px #A85155; top: 2px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Adam\/Desktop\/Strony\/\@Git\/\%23licznik\/css\/style\.scss}line{font-family:\00003225}}
+.container .controls .btn-2cd:active { box-shadow: 0 0 #A85155; top: 6px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Adam\/Desktop\/Strony\/\@Git\/\%23licznik\/css\/style\.scss}line{font-family:\00003230}}
+.container .controls button { position: relative; width: 3em; height: 3em; border: none; background-color: #f3f7f0; margin: 0.5em; font-family: 'Roboto', sans-serif; font-size: 2em; letter-spacing: 0px; font-weight: 900; line-height: 0em; font-size: 1em; color: #19323c; border-radius: 0.2em; cursor: pointer; outline: none; box-shadow: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Adam\/Desktop\/Strony\/\@Git\/\%23licznik\/css\/style\.scss}line{font-family:\00003244}}
+.container .controls button:nth-child(4) { background-image: url("../img/pause.svg"); background-position: center; background-size: cover; background-repeat: no-repeat; background-size: 20%; background-color: #f2545b; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Adam\/Desktop\/Strony\/\@Git\/\%23licznik\/css\/style\.scss}line{font-family:\00003253}}
+canvas { position: fixed; width: 100%; height: 100%; z-index: -1; mix-blend-mode: screen; opacity: 0.4; }
+
+/* Landscape phones and down */
+/* Landscape phone to portrait tablet */
+/* Portrait tablet to landscape and desktop */
+/* Large desktop */
+
+/*# sourceMappingURL=style.css.map */
